@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrophySeeker</title>
+  <link rel="icon" type="image/png" href="/logo.png">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom Scrollbar Styles for Webkit browsers (Chrome, Safari, Edge, etc.) */
+
+    /* Target the scrollbar itself for elements with overflow-x-auto */
+    .overflow-x-auto::-webkit-scrollbar {
+      height: 8px;
+      /* Height of the horizontal scrollbar */
+    }
+
+    /* Track (the area the thumb moves along) */
+    .overflow-x-auto::-webkit-scrollbar-track {
+      background: #2a3038;
+      /* Darker grey for the track, like deep space */
+      border-radius: 10px;
+    }
+
+    /* Handle (Thumb - the draggable part, our "rocket body") */
+    .overflow-x-auto::-webkit-scrollbar-thumb {
+      background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
+      /* Blue to purple gradient, like a sleek rocket body */
+      border-radius: 10px;
+      /* Rounded edges for an aerodynamic look */
+      border: 1px solid #4f46e5;
+      /* Subtle border */
+      box-shadow: 0 0 8px #8b5cf6;
+      /* Glowing effect for the rocket engine/trail */
+      transition: all 0.2s ease-in-out;
+      /* Smooth transition for hover effects */
+    }
+
+    /* Handle on hover (more intense glow for the "rocket engine") */
+    .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%);
+      /* Slightly darker gradient on hover */
+      box-shadow: 0 0 12px #c084fc;
+      /* More intense glow on hover */
+    }
+
+    /* --- Custom Animations --- */
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slide-up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scale-in {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fade-in 0.6s ease-out forwards;
+    }
+
+    .animate-slide-up {
+      animation: slide-up 0.7s ease-out forwards;
+    }
+
+    .animate-scale-in {
+      animation: scale-in 0.5s ease-out forwards;
+    }
+
+    /* Staggered animation delays for feature cards */
+    .animate-delay-100 {
+      animation-delay: 0.1s;
+    }
+
+    .animate-delay-200 {
+      animation-delay: 0.2s;
+    }
+
+    .animate-delay-300 {
+      animation-delay: 0.3s;
+    }
+
+    .animate-delay-400 {
+      animation-delay: 0.4s;
+    }
+
+    .animate-delay-500 {
+      animation-delay: 0.5s;
+    }
+
+    .animate-delay-600 {
+      animation-delay: 0.6s;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-CzOrjZ11.js"></script>
+</head>
+
+<body class="bg-gray-900 text-gray-100 antialiased">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
+</html>
